@@ -1,0 +1,147 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--Pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-container {
+    border-radius: 1.5rem;
+
+    background-color: white;
+    overflow: hidden;
+
+    min-width: 375px;
+    width: 30rem;
+}
+
+header>img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: var(--Dark-blue);
+}
+
+#content {
+    text-align: center;
+    margin-bottom: 1.6rem;
+    color: var(--Desaturated-blue);
+    font-size: 1.15rem;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 2.3rem;
+    padding: 1.3rem;
+
+    border-radius: .8rem;
+
+    background-color: var(--Very-pale-blue);
+}
+
+section>div {
+    margin-right: 5rem;
+    font-size: 1.2rem;
+}
+
+#plan-title {
+    font-weight: 700;
+    color: var(--Dark-blue);
+}
+
+hr {
+    height: 3px;
+    border: none;
+}
+
+#charge-year {
+    color: var(--Desaturated-blue);
+}
+
+#change-link {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#change-link:hover {
+    text-decoration: none;
+    opacity: .7;
+    cursor: pointer;
+}
+
+button {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 1rem;
+
+    font-size: 1.1rem;
+}
+
+#payment {
+    background-color: var(--Bright-blue);
+    border-radius: .8rem;
+
+    color: var(--Very-pale-blue);
+
+    font-weight: 700;
+
+    box-shadow: 0 10px 16px 10px hsl(245, 75%, 93%);
+}
+
+#payment:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+#cancel {
+    color: var(--Desaturated-blue);
+
+    font-weight: 700;
+}
+
+#cancel>span:hover {
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
